@@ -11,7 +11,7 @@
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/soorajnraju/local-call.git"
+        "url": "git+https://github.com/soorajnraju/local-call.git"
     },
     "bugs": {
         "url": "https://github.com/soorajnraju/local-call/issues"
