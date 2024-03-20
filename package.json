@@ -1,0 +1,44 @@
+{
+    "name": "local-call",
+    "version": "1.0.0",
+    "description": "A tiny module for manipulating local storage",
+    "keywords": [
+        "local",
+        "storage",
+        "local storage"
+    ],
+    "author": "Sooraj N Raju",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/soorajnraju/local-call.git"
+    },
+    "bugs": {
+        "url": "https://github.com/soorajnraju/local-call/issues"
+    },
+    "homepage": "https://github.com/soorajnraju/local-call",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "types": "dist/cjs/index.d.ts",
+    "exports": {
+        ".": {
+            "require": "./dist/cjs/index.js",
+            "import": "./dist/esm/index.js"
+        }
+    },
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "test": "jest",
+        "build": "tsc --project tsconfig.cjs.json && tsc --project tsconfig.esm.json",
+        "prepublish": "npm run build",
+        "publish": "npm publish"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.12",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.1.2",
+        "tsc": "^2.0.4"
+    }
+}
